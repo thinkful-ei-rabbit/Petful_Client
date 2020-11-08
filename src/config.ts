@@ -3,7 +3,7 @@ const dev = {
 };
 
 const prod = {
-  API_ENDPOINT: 'https://AmazingName.herokuapp.com/petful',
+  API_ENDPOINT: 'https://petful-app-server.herokuapp.com/',
 };
 
 const config = process.env.NODE_ENV === 'production' ? prod : dev;
