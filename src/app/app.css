@@ -1,0 +1,33 @@
+.top-nav {
+  margin: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30vw;
+}
+
+.top-nav > * {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.main {
+  margin-top: 20px;
+  width: 90vw;
+  flex-direction: row;
+}
+
+.people-sidebar {
+  flex: 1;
+  justify-content: center;
+  align-content: space-between;
+  align-self: flex-start;
+}
+
+.route-container {
+  margin-left: 15px;
+  flex: 3;
+  justify-content: center;
+  align-content: space-between;
+}

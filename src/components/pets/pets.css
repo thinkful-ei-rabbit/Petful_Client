@@ -1,0 +1,7 @@
+.get-in-line {
+  flex-direction: row;
+}
+
+.get-in-line input {
+  margin-right: 5px;
+}
