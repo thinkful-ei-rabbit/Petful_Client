@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Petful App - React Client Prototype!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Puts cats and dogs into a queue, while waiting for people to line up and adopt them!
 
-## Available Scripts
+## Vercel Deploy: https://petful-inky.vercel.app/
 
-In the project directory, you can run:
+## Petful API: https://petful-app-server.herokuapp.com/petful/
 
-### `npm start`
+## Pages:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### / (home)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="./images/splash.png" width="400" />
 
-### `npm test`
+- Basic splash page explaining how to interface with the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### /pets
 
-### `npm run build`
+<img src="./images/pets.png" width="400" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- This is where a user can enter the line to be eligible for pet adoption
+- Once a name is entered, there's a simulated adoption process to move the line along, each person choosing either a cat or dog
+- Once iot's the user's turn, buttons to adopt will appear under each pet, once pressed moving the user to the final adopted page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### /adopted
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="./images/adopted.png" width="400" />
 
-### `npm run eject`
+- Adoption is successful, showing the adopted pet with it's new owner listed below
+- To continue using the prototype, you can use the reset buttons at the top
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Reset Buttons:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- resets local data store to default for either pets or people
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Reset People:
+   > Resets the line so you can continue on cycling through the pets
+2. Reset Pets
+   > Resets pets back to the beginning
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Tech Stack:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Express Server
+   > link to repo: https://github.com/thinkful-ei-rabbit/Petful_Server
+2. React Typescript Client
+   > prototype utilizing the Petful API
